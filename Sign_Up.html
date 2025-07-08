@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+
+
+<div class="Login">
+    <div class="container">
+        <div class="cartona ">
+            <h1>Smart Login System</h1>
+            <input type="text" class="form-control" placeholder="Enter Your name" id="name">
+            <input type="email" class=" form-control" placeholder="Enter Your email" id="email">
+            <input type="password" class=" form-control" placeholder="Enter Your Password" id="password">
+            <p id="alertMassage" class="d-none"></p>
+            <button type="button" onclick="SignUp" id="SignUpBtn">Sign Up</button>
+            <div class="text-white d-flex mt-3">
+                <p class="pr-2">You have an account?</p>
+                <a href="index.html" class=text-white>Signin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 
+Solve Code JS
+<div>
+    var InputName= document.getElementById('name')
+var InputEmail= document.getElementById('email')
+var InputPassword= document.getElementById('password')
+var SignUpBtn= document.getElementById("SignUpBtn")
+var alertMassage=document.getElementById("alertMassage")
+CartonaUser=[]
+
+if(localStorage.getItem("User") != null){
+    CartonaUser=JSON.parse(localStorage.getItem("User"))
+}
+
+function SignUp(){
+    user={
+        InputName:InputName.value,
+        InputEmail:InputEmail.value,
+        InputPassword:InputPassword.value
+    }
+    if(CheckInput()==true){
+        //return alert
+    }
+    else{
+    CartonaUser.push(user)
+    localStorage.setItem("User" , JSON.stringify(CartonaUser))
+    console.log(CartonaUser)
+    getAlertMassage()
+    ClrForm()
+
+    }
+
+
+
+    
+}
+
+function ClrForm(){
+    InputName.value=null
+    InputEmail.value=null
+    InputPassword.value=null
+}
+
+
+SignUpBtn.addEventListener('click' , function(){
+    SignUp()
+})
+function getAlertMassage(){
+    alertMassage.classList.replace("d-none","d-block")
+    alertMassage.innerHTML="Success"
+    alertMassage.style.color="red"
+}
+console.log(CartonaUser);
+
+
+
+
+function CheckInput(){
+    if(InputName=="" ||InputEmail==""||InputPassword=="")
+        return true;
+    
+    else
+        return false;
+}
+</div> -->
+
+
+
+
+<script src="js/SignUp.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
